@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -25,8 +26,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
 
     CheckBox cbJ, cbVB, cbC, cbH;
 
+    Spinner spAgama;
+
     Button bFinish;
-    TextView tvN, tvNP, tvRB, tvTK, tvTL, tvRBS, tvA, tvHP, tvHasil, tvJumlah;
+    TextView tvN, tvNP, tvRB, tvTK, tvTL, tvAg, tvRBS, tvA, tvHP, tvHasil, tvJumlah;
     int nJumlah;
 
     @Override
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         cbC.setOnCheckedChangeListener(this);
         cbH.setOnCheckedChangeListener(this);
 
+        spAgama = (Spinner) findViewById(R.id.spinnerAgama);
+
         bFinish = (Button) findViewById(R.id.buttonFinish);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
         tvJumlah = (TextView) findViewById(R.id.textViewJumlah);
@@ -65,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         tvNP = (TextView) findViewById(R.id.textViewNP);
         tvTK = (TextView) findViewById(R.id.textViewTK);
         tvTL = (TextView) findViewById(R.id.textViewTL);
+        tvAg = (TextView) findViewById(R.id.textViewAg);
         tvA = (TextView) findViewById(R.id.textViewA);
         tvHP = (TextView) findViewById(R.id.textViewHP);
 
@@ -74,8 +80,13 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                 doProcess();
                 doClick();
                 doCheck();
+                doSpin();
             }
         });
+    }
+
+    private void doSpin() {
+        tvAg.setText("Agama Yang Anda Pilih Adalah : " + spAgama.getSelectedItem().toString());
     }
 
     private void doCheck() {

@@ -240,6 +240,15 @@
             tools:text="Hasil" />
 
         <TextView
+            android:id="@+id/textViewAg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
             android:id="@+id/textViewRBS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
