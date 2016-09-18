@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas1.xirpl4005.tugas_formulir.MainActivity">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/highlighted_text_material_dark"
+            android:text="Formulir Lamaran Pekerjaan"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="PT. Jaguar"
+            android:textColor="@android:color/holo_green_light" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/picture" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap" />
+
+        <EditText
+            android:id="@+id/editTextPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Panggilan" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toEndOf="@+id/radioGroupJK"
+                android:layout_toRightOf="@+id/radioGroupJK"
+                android:text="Laki - Laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextTempat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Kelahiran" />
+
+        <EditText
+            android:id="@+id/editTextTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tanggal Lahir"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Agama" />
+
+
+        <Spinner
+            android:id="@+id/spinnerAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menikah" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Belum Menikah" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Rumah" />
+
+        <EditText
+            android:id="@+id/editTextHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telepon / Hp"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahasa Pemrograman Yang Dikuasai" />
+
+        <TextView
+            android:id="@+id/textViewJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah" />
+
+        <CheckBox
+            android:id="@+id/checkBoxJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visual Basic" />
+
+        <CheckBox
+            android:id="@+id/checkBoxC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++" />
+
+        <CheckBox
+            android:id="@+id/checkBoxH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML" />
+
+
+        <Button
+            android:id="@+id/buttonFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:text="Finish" />
+
+        <TextView
+            android:id="@+id/textViewN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewRBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="Hasil" />
+
+
+    </LinearLayout>
+
+</ScrollView>
